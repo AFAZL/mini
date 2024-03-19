@@ -56,6 +56,13 @@ class LoginPage extends StatelessWidget {
                 },
                 child: const Text('Create an account'),
               ),
+              const SizedBox(height: 10.0), // Add space between buttons
+              TextButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, '/home');
+                },
+                child: const Text('Go to Home Page'),
+              ),
             ],
           ),
         ),
